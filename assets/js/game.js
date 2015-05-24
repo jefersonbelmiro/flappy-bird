@@ -25,8 +25,6 @@
 
         create: function() {
 
-            this.game.world.setBounds(-10, -10, this.game.width + 20, this.game.height + 20);
-
             currentstate = states.splash;
 
             var centerX = this.world.centerX, centerY = this.world.centerY;
@@ -228,12 +226,6 @@
         hitEffect : function() {
 
             sounds.hit.play();
-
-            this.game.camera.y -10;
-            this.game.add.tween(this.game.camera)
-                .to({ y: 10 }, 40, Phaser.Easing.Sinusoidal.InOut, false, 0, 3, true)
-                .start()
-            ; 
 
             var bg = this.game.add.graphics(0, 0);
             var tween = this.game.add.tween(bg).to({alpha: 0}, 500, Phaser.Easing.Linear.None);
