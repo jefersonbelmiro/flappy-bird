@@ -1,0 +1,17 @@
+<widget id="com.belmiro.bamboozled" version="1.0.0">
+    <name>Flappy Bird</name>
+    <description>Flappy Bird</description>
+    <author email="jeferson.belmiro@gmail.com" href="http://jeferson.belmiro.com">
+        team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="orientation" value="portrait" />
+    <preference name="permissions" value="none" />
+    <platform name="android">
+        <preference name="orientation" value="portrait" />
+    </platform>
+</widget>
+
+
+
