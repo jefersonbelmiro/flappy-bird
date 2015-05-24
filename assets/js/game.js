@@ -355,9 +355,12 @@
 
         createBackground : function() {
 
+            var data = this.game.cache.getFrameData('sprites').getFrameByName('bg');
             var width = 276, y = this.game.height - 276;
-            this.add.sprite(0, y, 'sprites', 'bg');
-            this.add.sprite(width, y, 'sprites', 'bg');
+            // this.add.sprite(0, y, 'sprites', 'bg');
+            // this.add.sprite(width, y, 'sprites', 'bg');
+
+            this.foreground = this.add.tileSprite(0, y, this.game.width, data.height, 'sprites', 'bg');
         },
 
         createForeground : function() {

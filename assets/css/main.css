@@ -5,7 +5,9 @@
 }
 
 body {
-    /* background: #292929; */
-    background: #222;
+    background: #000000;
     overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
